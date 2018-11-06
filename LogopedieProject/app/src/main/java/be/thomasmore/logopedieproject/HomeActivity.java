@@ -1,5 +1,6 @@
 package be.thomasmore.logopedieproject;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -24,6 +25,11 @@ public class HomeActivity extends AppCompatActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_home, menu);
         return true;
+    }
+
+    public void goToChoose(View v) {
+        Intent intent = new Intent(this, ChooseOneActivity.class);
+        startActivity(intent);
     }
 
 }
