@@ -8,13 +8,41 @@
     tools:context=".ChooseOneActivity"
     tools:showIn="@layout/activity_choose_one">
 
-    <!--
-        -> Top balk
-            ->back
-            ->statistiek
-        -> fronting
-        ->stopping
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terug" />
+            <Button
+                android:id="@+id/buttons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Statistieken" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/buttone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fronting" />
+            <Button
+                android:id="@+id/buttonss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stopping" />
+        </LinearLayout>
+    </LinearLayout>
 
-    -->
 
 </android.support.constraint.ConstraintLayout>
