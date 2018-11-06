@@ -43,7 +43,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Nieuwe Gebruiker"
-                android:background="@android:color/holo_orange_dark"/>
+                android:background="@android:color/holo_orange_dark"
+                android:onClick="goToNewuser"/>
         </LinearLayout>
     </LinearLayout>
 

@@ -32,4 +32,9 @@ public class HomeActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void goToNewuser(View v) {
+        Intent intent = new Intent(this, NewUserActivity.class);
+        startActivity(intent);
+    }
+
 }
