@@ -19,6 +19,54 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ChooseOneActivity"
+            android:label="@string/title_activity_choose_one"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChooseTwoActivity"
+            android:label="@string/title_activity_choose_two"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChooseThreeActivity"
+            android:label="@string/title_activity_choose_three"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChooseFourActivity"
+            android:label="@string/title_activity_choose_four"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChooseGame"
+            android:label="@string/title_activity_choose_game"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NewUserActivity"
+            android:label="@string/title_activity_new_user"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".StatisticsActivity"
+            android:label="@string/title_activity_statistics"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".GameListenGoodActivity"
+            android:label="@string/title_activity_game_listen_good"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".GameGooseActivity"
+            android:label="@string/title_activity_game_goose"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".GameDoggieWoefActivity"
+            android:label="@string/title_activity_game_doggie_woef"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".GameSayItYourselfActivity"
+            android:label="@string/title_activity_game_say_it_yourself"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".GameEndActivity"
+            android:label="@string/title_activity_game_end"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

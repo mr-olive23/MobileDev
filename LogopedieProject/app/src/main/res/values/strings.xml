@@ -1,4 +1,17 @@
 <resources>
     <string name="app_name">LogopedieProject</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_choose_one">ChooseOneActivity</string>
+    <string name="title_activity_choose_two">ChooseTwoActivity</string>
+    <string name="title_activity_choose_three">ChooseThreeActivity</string>
+    <string name="title_activity_choose_four">ChooseFourActivity</string>
+    <string name="title_activity_choose_game">ChooseGame</string>
+    <string name="title_activity_new_user">NewUserActivity</string>
+    <string name="title_activity_statistics">StatisticsActivity</string>
+    <string name="title_activity_game_listen_good">GameListenGoodActivity</string>
+    <string name="title_activity_doggie_woef">DoggieWoefActivity</string>
+    <string name="title_activity_game_goose">GameGooseActivity</string>
+    <string name="title_activity_game_doggie_woef">GameDoggieWoefActivity</string>
+    <string name="title_activity_game_say_it_yourself">GameSayItYourselfActivity</string>
+    <string name="title_activity_game_end">GameEndActivity</string>
 </resources>
