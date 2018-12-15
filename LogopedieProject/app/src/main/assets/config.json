@@ -1,0 +1,45 @@
+{
+  "Fronting": {
+    "Finaal": {
+      "K-T": {
+        "val" : "temp"
+
+      },
+      "G-S": {
+        "val" : "temp"
+      },
+      "NG-N": {
+        "val" : "temp"
+      }
+    },
+    "Initiaal": {
+      "K-T":{
+        "val" : "temp"
+      },
+      "G-S/V": {
+        "val" : "temp"
+      }
+    }
+  },
+  "Stopping": {
+    "Finaal": {
+      "S-T": {
+        "val" : "temp"
+      },
+      "CH-T" :{
+        "val" : "temp"
+      }
+    },
+    "Initiaal":{
+      "G-K": {
+        "val" : "temp"
+      },
+      "S/Z-T": {
+        "val" : "temp"
+      },
+      "F-T": {
+        "val" : "temp"
+      }
+    }
+  }
+}

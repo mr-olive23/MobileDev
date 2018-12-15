@@ -14,4 +14,5 @@
     <string name="title_activity_game_doggie_woef">GameDoggieWoefActivity</string>
     <string name="title_activity_game_say_it_yourself">GameSayItYourselfActivity</string>
     <string name="title_activity_game_end">GameEndActivity</string>
+    <string name="title_activity_choose">ChooseActivity</string>
 </resources>

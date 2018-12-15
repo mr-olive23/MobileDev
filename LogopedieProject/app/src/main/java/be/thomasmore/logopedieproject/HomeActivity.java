@@ -10,6 +10,9 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class HomeActivity extends AppCompatActivity {
 
     @Override
@@ -28,13 +31,9 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     public void goToChoose(View v) {
-        Intent intent = new Intent(this, ChooseOneActivity.class);
+        Intent intent = new Intent(this, ChooseActivity.class);
+        ArrayList<String> list =  new ArrayList<String>();
+        intent.putExtra("navPosition", list);
         startActivity(intent);
     }
-
-    public void goToNewuser(View v) {
-        Intent intent = new Intent(this, NewUserActivity.class);
-        startActivity(intent);
-    }
-
 }
