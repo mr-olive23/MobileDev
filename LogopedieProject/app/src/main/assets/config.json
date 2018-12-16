@@ -8,26 +8,31 @@
           {
             "Bek": {
               "sound": "bek",
-              "picture": "een random bestands naam"
+              "picture": "tekeningnijlpaard.png"
             },
             "Bed": {
-              "sound": "bed"
+              "sound": "bed",
+              "picture": "tekeningbed.png"
             }
           },
           {
             "Nek": {
-              "sound": "nek"
+              "sound": "nek",
+              "picture": "tekeningnek.png"
             },
             "Net": {
-              "sound": "net"
+              "sound": "net",
+              "picture": "tekeningnet.png"
             }
           },
           {
             "Bak": {
-              "sound": "bak"
+              "sound": "bak",
+              "picture": "tekeningbak.png"
             },
             "Bad": {
-              "sound": "bad"
+              "sound": "bad",
+              "picture": "tekeningnbad.png"
             }
           }
         ]
