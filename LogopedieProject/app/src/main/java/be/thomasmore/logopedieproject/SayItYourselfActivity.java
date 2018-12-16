@@ -1,5 +1,6 @@
 package be.thomasmore.logopedieproject;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -26,7 +27,8 @@ public class SayItYourselfActivity extends AppCompatActivity {
     }
     public void maakPrentjes(){
         //Prentjes shufflen
-
+        Intent intent = getIntent();
+        
         //Prentjes tonen
     }
 

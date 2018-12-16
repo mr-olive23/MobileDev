@@ -7,26 +7,32 @@
         "paar": [
           {
             "Bek": {
-              "sound": "bek.wav"
+              "sound": "bek.wav",
+              "picture": "tekeningnijlpaard.png"
             },
             "Bed": {
-              "sound": "bed.wav"
+              "sound": "bed.wav",
+              "picture": "tekeningbed.png"
             }
           },
           {
             "Nek": {
-              "sound": "nek.wav"
+              "sound": "nek.wav",
+              "picture": "tekeningnek.png"
             },
             "Net": {
-              "sound": "net.wav"
+              "sound": "net.wav",
+              "picture": "tekeningnet.png"
             }
           },
           {
             "Bak": {
-              "sound": "bak.wav"
+              "sound": "bak.wav",
+              "picture": "tekeningbak.png"
             },
             "Bad": {
-              "sound": "bad.wav"
+              "sound": "bad.wav",
+              "picture": "tekeningnbad.png"
             }
           }
         ]
