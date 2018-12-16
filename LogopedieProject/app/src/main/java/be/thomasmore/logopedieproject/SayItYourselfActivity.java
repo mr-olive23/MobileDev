@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 public class SayItYourselfActivity extends AppCompatActivity {
 
-    Button bt_answer1, bt_answer2;
+    private int juistAntwoord;
 
     ImageView iv_1, iv_2, iv_3, iv_4, iv_5, iv_6, iv_7, iv_8, iv_9;
     @Override
@@ -22,8 +22,25 @@ public class SayItYourselfActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        bt_answer1 = (Button) findViewById(R.id.bt_answer1);
+        maakPrentjes();
+    }
+    public void maakPrentjes(){
+        //Prentjes shufflen
 
+        //Prentjes tonen
     }
 
+    public void onClickAnswer(View v){
+    Button answer = (Button) v;
+    int buttonTag = Integer.parseInt(v.getTag().toString());
+    if (buttonTag == juistAntwoord){
+        // prent blijft dan omgedraaid + pling geluid
+    }else{
+        // prent word terug omgedraaid
+    }
+    }
+
+    public void onClickDraaiPrent(){
+
+    }
 }

@@ -11,8 +11,8 @@
     <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:weightSum="3"
-        android:layout_height="350dp"
+        android:weightSum="4"
+        android:layout_height="500dp"
         android:orientation="vertical"
         android:layout_margin="15dp">
 
@@ -113,6 +113,34 @@
                 android:layout_height="match_parent" />
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/answer_1"
+                android:layout_weight="1"
+                android:tag="0"
+                android:scaleType="centerInside"
+                android:text="Test"
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:onClick="onClickAnswer"/>
+
+            <Button
+                android:id="@+id/answer_2"
+                android:tag="1"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:text="Test"
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:onClick="onClickAnswer"/>
+
+        </LinearLayout>
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
