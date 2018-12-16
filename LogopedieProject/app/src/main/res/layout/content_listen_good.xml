@@ -33,14 +33,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Terug" />
+                android:text="Terug"
+                android:onClick="back"/>
 
             <Button
                 android:id="@+id/button3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Start" />
+                android:text="Start"
+                android:onClick="start"/>
         </LinearLayout>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

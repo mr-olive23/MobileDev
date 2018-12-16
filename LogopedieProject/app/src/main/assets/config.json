@@ -3,30 +3,31 @@
     "Finaal": {
       "K-T": {
         "game": true,
-        "sound": "reeks1.wav",
+        "sound": "reeks1",
         "paar": [
           {
             "Bek": {
-              "sound": "bek.wav"
+              "sound": "bek",
+              "picture": "een random bestands naam"
             },
             "Bed": {
-              "sound": "bed.wav"
+              "sound": "bed"
             }
           },
           {
             "Nek": {
-              "sound": "nek.wav"
+              "sound": "nek"
             },
             "Net": {
-              "sound": "net.wav"
+              "sound": "net"
             }
           },
           {
             "Bak": {
-              "sound": "bak.wav"
+              "sound": "bak"
             },
             "Bad": {
-              "sound": "bad.wav"
+              "sound": "bad"
             }
           }
         ]
