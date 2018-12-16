@@ -37,17 +37,21 @@ public class ChooseActivity extends AppCompatActivity {
         String jsonText = loadJSONFromAsset(getApplicationContext());
         try {
             JSONObject config = new JSONObject(jsonText);
-            Log.e("gogo", location.toString());
             if(location.size() > 0){
                 //start walking trough config.json
                 JSONObject temp = config;
-
                 for (int i = 0; i < location.size(); i++){
                     temp = temp.getJSONObject(location.get(i));
                 }
                 for(int i = 0; i<temp.length(); i++){
-                    Log.e("gogo", "Key = " + temp.names().getString(i) + " value = " + temp.get(temp.names().getString(i)));
-
+                    if(temp.has("game")){
+                        if(temp.getBoolean("game")){
+                            Intent intentNew = new Intent(this, GameMainActivity.class);
+                            intentNew.putExtra("navPosition", location);
+                            startActivity(intentNew);
+                            finish();
+                        }
+                    }
                     Button myButton = new Button(this);
                     myButton.setText(temp.names().getString(i));
                     myButton.setOnClickListener(new View.OnClickListener() {
@@ -64,8 +68,6 @@ public class ChooseActivity extends AppCompatActivity {
             }else{
                 //get the first value's of config.json
                 for(int i = 0; i<config.length(); i++){
-                    Log.e("gogo", "Key = " + config.names().getString(i) + " value = " + config.get(config.names().getString(i)));
-
                     Button myButton = new Button(this);
                     myButton.setText(config.names().getString(i));
                     myButton.setOnClickListener(new View.OnClickListener() {
@@ -116,7 +118,13 @@ public class ChooseActivity extends AppCompatActivity {
             if(location.size() > 0){
                 //remove last element from location list
                 location.remove(location.size() - 1);
-                Log.e("gogo", location.toString());
+
+                Intent intent = new Intent(this, ChooseActivity.class);
+                intent.putExtra("navPosition", location);
+                startActivity(intent);
+            }else{
+                Intent intent = new Intent(this, HomeActivity.class);
+                startActivity(intent);
             }
             //close activity
             finish();
@@ -126,6 +134,7 @@ public class ChooseActivity extends AppCompatActivity {
             Intent intent = new Intent(this, ChooseActivity.class);
             intent.putExtra("navPosition", location);
             startActivity(intent);
+            finish();
         }
     }
 
@@ -134,7 +143,12 @@ public class ChooseActivity extends AppCompatActivity {
         if(location.size() > 0){
             //remove last element from location list
             location.remove(location.size() - 1);
-            Log.e("gogo", location.toString());
+            Intent intent = new Intent(this, ChooseActivity.class);
+            intent.putExtra("navPosition", location);
+            startActivity(intent);
+        }else{
+            Intent intent = new Intent(this, HomeActivity.class);
+            startActivity(intent);
         }
         //close activity
         finish();

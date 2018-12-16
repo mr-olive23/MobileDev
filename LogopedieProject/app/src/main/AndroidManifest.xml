@@ -22,6 +22,18 @@
         <activity
             android:name=".ChooseActivity"
             android:label="@string/title_activity_choose"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".GameMainActivity"
+            android:label="@string/title_activity_game_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ListenGoodActivity"
+            android:label="@string/title_activity_listen_good"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SayItYourselfActivity"
+            android:label="@string/title_activity_say_it_yourself"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

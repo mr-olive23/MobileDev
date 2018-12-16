@@ -15,4 +15,7 @@
     <string name="title_activity_game_say_it_yourself">GameSayItYourselfActivity</string>
     <string name="title_activity_game_end">GameEndActivity</string>
     <string name="title_activity_choose">ChooseActivity</string>
+    <string name="title_activity_game_main">GameMainActivity</string>
+    <string name="title_activity_listen_good">ListenGoodActivity</string>
+    <string name="title_activity_say_it_yourself">SayItYourselfActivity</string>
 </resources>

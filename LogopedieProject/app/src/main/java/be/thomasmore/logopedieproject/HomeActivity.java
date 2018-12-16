@@ -35,5 +35,6 @@ public class HomeActivity extends AppCompatActivity {
         ArrayList<String> list =  new ArrayList<String>();
         intent.putExtra("navPosition", list);
         startActivity(intent);
+        finish();
     }
 }

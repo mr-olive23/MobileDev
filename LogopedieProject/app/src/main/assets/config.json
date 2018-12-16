@@ -2,43 +2,69 @@
   "Fronting": {
     "Finaal": {
       "K-T": {
-        "val" : "temp"
-
+        "game": true,
+        "sound": "reeks1.wav",
+        "paar": [
+          {
+            "Bek": {
+              "sound": "bek.wav"
+            },
+            "Bed": {
+              "sound": "bed.wav"
+            }
+          },
+          {
+            "Nek": {
+              "sound": "nek.wav"
+            },
+            "Net": {
+              "sound": "net.wav"
+            }
+          },
+          {
+            "Bak": {
+              "sound": "bak.wav"
+            },
+            "Bad": {
+              "sound": "bad.wav"
+            }
+          }
+        ]
       },
       "G-S": {
-        "val" : "temp"
+        "game": true
       },
       "NG-N": {
-        "val" : "temp"
+        "game": true
       }
     },
     "Initiaal": {
-      "K-T":{
-        "val" : "temp"
+      "K-T": {
+        "game": true
       },
       "G-S/V": {
-        "val" : "temp"
+        "game": true
       }
     }
   },
   "Stopping": {
     "Finaal": {
       "S-T": {
-        "val" : "temp"
+        "game": true
       },
-      "CH-T" :{
-        "val" : "temp"
+      "CH-T": {
+        "game": true
       }
     },
-    "Initiaal":{
+    "Initiaal": {
       "G-K": {
-        "val" : "temp"
+        "game": true
       },
       "S/Z-T": {
-        "val" : "temp"
+        "game": true
       },
       "F-T": {
-        "val" : "temp"
+        "game": true
       }
     }
   }
