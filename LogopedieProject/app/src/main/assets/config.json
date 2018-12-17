@@ -2,75 +2,144 @@
   "Fronting": {
     "Finaal": {
       "K-T": {
-        "game": true,
-        "sound": "reeks1",
-        "paar": [
-          {
-            "Bek": {
-              "sound": "bek",
-              "picture": "tekeningnijlpaard.png"
-            },
-            "Bed": {
-              "sound": "bed",
-              "picture": "tekeningbed.png"
-            }
+        "Bek - Bed": {
+          "game": true,
+          "sound": "reeks1",
+          "Bek": {
+            "sound": "bek",
+            "picture": "tekeningnijlpaard.png"
           },
-          {
-            "Nek": {
-              "sound": "nek",
-              "picture": "tekeningnek.png"
-            },
-            "Net": {
-              "sound": "net",
-              "picture": "tekeningnet.png"
-            }
-          },
-          {
-            "Bak": {
-              "sound": "bak",
-              "picture": "tekeningbak.png"
-            },
-            "Bad": {
-              "sound": "bad",
-              "picture": "tekeningnbad.png"
-            }
+          "Bed": {
+            "sound": "bed",
+            "picture": "tekeningbed.png"
           }
-        ]
+        },
+        "Nek - Net": {
+          "game": true,
+          "sound": "reeks1",
+          "Nek": {
+            "sound": "nek",
+            "picture": "tekeningnek.png"
+          },
+          "Net": {
+            "sound": "net",
+            "picture": "tekeningnet.png"
+          }
+        },
+        "Bak - Bad": {
+          "game": true,
+          "sound": "reeks1",
+          "Bak": {
+            "sound": "bak",
+            "picture": "tekeningbak.png"
+          },
+          "Bad": {
+            "sound": "bad",
+            "picture": "tekeningnbad.png"
+          }
+        }
       },
       "G-S": {
-        "game": true
+        "Buig - Buis": {
+          "game": true,
+          "sound": "reeks3"
+        },
+        "Leeg - Lees": {
+          "game": true,
+          "sound": "reeks3"
+        },
+        "Dag - Das": {
+          "game": true,
+          "sound": "reeks3"
+        }
       },
       "NG-N": {
-        "game": true
+        "Pang - Pan": {
+          "game": true,
+          "sound": "reeks5"
+        },
+        "Tong - Ton": {
+          "game": true,
+          "sound": "reeks5"
+        }
       }
     },
     "Initiaal": {
       "K-T": {
-        "game": true
+        "Koe - Toe": {
+          "game": true,
+          "sound": "reeks2"
+        },
+        "Kou - Touw": {
+          "game": true,
+          "sound": "reeks2"
+        },
+        "Kam - Tam": {
+          "game": true,
+          "sound": "reeks2"
+        }
       },
       "G-S/V": {
-        "game": true
+        "Guus - Suus": {
+          "game": true,
+          "sound": "reeks4"
+        },
+        "Goed - Voet": {
+          "game": true,
+          "sound": "reeks4"
+        },
+        "Goud - Fout": {
+          "game": true,
+          "sound": "reeks4"
+        }
       }
     }
   },
   "Stopping": {
     "Finaal": {
       "S-T": {
-        "game": true
+        "Boos - Boot": {
+          "game": true,
+          "sound": "reeks6"
+        },
+        "Bos - Bot": {
+          "game": true,
+          "sound": "reeks6"
+        }
       },
       "CH-T": {
-        "game": true
+        "Pech - Pet": {
+          "game": true,
+          "sound": "reeks3"
+        }
       }
     },
     "Initiaal": {
       "G-K": {
-        "game": true
+        "Gat - Kat": {
+          "game": true,
+          "sound": "reeks4"
+        }
       },
       "S/Z-T": {
-        "game": true
+        "Sok - Tok": {
+          "game": true,
+          "sound": "reeks7"
+        },
+        "Zak - Tak": {
+          "game": true,
+          "sound": "reeks8"
+        }
       },
       "F-T": {
-        "game": true
+        "Fee - Thee": {
+          "game": true,
+          "sound": "reeks9"
+        },
+        "Fien - Tien": {
+          "game": true,
+          "sound": "reeks9"
+        }
       }
     }
   }

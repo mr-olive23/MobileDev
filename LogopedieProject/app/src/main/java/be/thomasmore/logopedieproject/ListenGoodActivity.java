@@ -16,6 +16,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.LinearInterpolator;
+import android.view.animation.RotateAnimation;
+import android.widget.ImageView;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -28,7 +32,7 @@ import java.util.ArrayList;
 public class ListenGoodActivity extends AppCompatActivity  {
     ArrayList<String> location = new ArrayList<String>();
     String soundName;
-    MediaPlayer mp;
+    MediaPlayer mp = new MediaPlayer();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -96,6 +100,14 @@ public class ListenGoodActivity extends AppCompatActivity  {
                 mp = MediaPlayer.create(getApplicationContext(), soundId);
                 mp.start();
 
+            RotateAnimation anim = new RotateAnimation(0f, 360f, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
+            anim.setInterpolator(new LinearInterpolator());
+            anim.setRepeatCount(Animation.INFINITE);
+            anim.setDuration(3000);
+
+            final ImageView splash = (ImageView) findViewById(R.id.imageView);
+            splash.startAnimation(anim);
+
 
 
         }else{
@@ -107,7 +119,9 @@ public class ListenGoodActivity extends AppCompatActivity  {
         Intent intentNew = new Intent(this, GameMainActivity.class);
         intentNew.putExtra("navPosition", location);
         startActivity(intentNew);
-        mp.stop();
+        if(mp.isPlaying()){
+            mp.stop();
+        }
         finish();
     }
 
@@ -116,7 +130,9 @@ public class ListenGoodActivity extends AppCompatActivity  {
         Intent intentNew = new Intent(this, GameMainActivity.class);
         intentNew.putExtra("navPosition", location);
         startActivity(intentNew);
-        mp.stop();
+        if(mp.isPlaying()){
+            mp.stop();
+        }
         finish();
     }
 
