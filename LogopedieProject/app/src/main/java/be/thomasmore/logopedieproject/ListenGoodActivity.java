@@ -29,7 +29,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 
-public class ListenGoodActivity extends AppCompatActivity  {
+public class ListenGoodActivity extends AppCompatActivity {
     ArrayList<String> location = new ArrayList<String>();
     String soundName;
     MediaPlayer mp = new MediaPlayer();
@@ -50,7 +50,7 @@ public class ListenGoodActivity extends AppCompatActivity  {
         try {
             JSONObject config = new JSONObject(jsonText);
             JSONObject temp = config;
-            for (int i = 0; i < location.size(); i++){
+            for (int i = 0; i < location.size(); i++) {
                 temp = temp.getJSONObject(location.get(i));
             }
             soundName = temp.getString("sound");
@@ -62,14 +62,15 @@ public class ListenGoodActivity extends AppCompatActivity  {
             alertDialogBuilder.setPositiveButton("Ga verder",
                     new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int id) {
-                        }});
+                        }
+                    });
             AlertDialog alertDialog = alertDialogBuilder.create();
             //check earbuds
-            AudioManager audioManager = (AudioManager)getSystemService(Context.AUDIO_SERVICE);
-            if(audioManager.isWiredHeadsetOn()){
+            AudioManager audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
+            if (audioManager.isWiredHeadsetOn()) {
                 //get rid of the message
                 alertDialog.hide();
-            }else{
+            } else {
                 alertDialog.show();
             }
 
@@ -79,17 +80,18 @@ public class ListenGoodActivity extends AppCompatActivity  {
     }
 
     //play button (starts playing the bombardment), first a small introduction
-    public  void start(View v){
+    public void start(View v) {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
         alertDialogBuilder.setMessage("Steek een hoofdtelefoon of oortjes in het apparaat!");
         alertDialogBuilder.setCancelable(false);
         alertDialogBuilder.setPositiveButton("Ga verder",
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
-                    }});
+                    }
+                });
         AlertDialog alertDialog = alertDialogBuilder.create();
-        AudioManager audioManager = (AudioManager)getSystemService(Context.AUDIO_SERVICE);
-        if(audioManager.isWiredHeadsetOn()){
+        AudioManager audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
+        if (audioManager.isWiredHeadsetOn()) {
             //get rid of the message
             alertDialog.hide();
             Log.e("gogo", String.valueOf(soundName));
@@ -97,8 +99,13 @@ public class ListenGoodActivity extends AppCompatActivity  {
             int soundId = getRaw(soundName);
             Log.e("gogo", String.valueOf(soundId));
 
-                mp = MediaPlayer.create(getApplicationContext(), soundId);
-                mp.start();
+            if (mp.isPlaying()) {
+                mp.stop();
+            }
+
+            mp = MediaPlayer.create(getApplicationContext(), soundId);
+            mp.start();
+
 
             RotateAnimation anim = new RotateAnimation(0f, 360f, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
             anim.setInterpolator(new LinearInterpolator());
@@ -109,17 +116,16 @@ public class ListenGoodActivity extends AppCompatActivity  {
             splash.startAnimation(anim);
 
 
-
-        }else{
+        } else {
             alertDialog.show();
         }
     }
 
-    public void back(View v){
+    public void back(View v) {
         Intent intentNew = new Intent(this, GameMainActivity.class);
         intentNew.putExtra("navPosition", location);
         startActivity(intentNew);
-        if(mp.isPlaying()){
+        if (mp.isPlaying()) {
             mp.stop();
         }
         finish();
@@ -130,7 +136,7 @@ public class ListenGoodActivity extends AppCompatActivity  {
         Intent intentNew = new Intent(this, GameMainActivity.class);
         intentNew.putExtra("navPosition", location);
         startActivity(intentNew);
-        if(mp.isPlaying()){
+        if (mp.isPlaying()) {
             mp.stop();
         }
         finish();
@@ -160,8 +166,7 @@ public class ListenGoodActivity extends AppCompatActivity  {
 
     }
 
-    private static int getRaw(String name)
-    {
+    private static int getRaw(String name) {
         try {
             return R.raw.class.getField(name).getInt(null);
         } catch (IllegalAccessException e) {

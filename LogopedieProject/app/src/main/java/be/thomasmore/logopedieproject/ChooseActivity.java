@@ -30,6 +30,7 @@ public class ChooseActivity extends AppCompatActivity {
         setContentView(R.layout.activity_choose);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        int margin = 5;
 
         //get current location in the config.json
         Intent intent = getIntent();
@@ -53,6 +54,9 @@ public class ChooseActivity extends AppCompatActivity {
                         }
                     }
                     Button myButton = new Button(this);
+
+                    myButton.setTextColor(getResources().getColor(R.color.normalButtonTextColor));
+                    myButton.setBackgroundColor(getResources().getColor(R.color.normalButtonBackgroundColor));
                     myButton.setText(temp.names().getString(i));
                     myButton.setOnClickListener(new View.OnClickListener() {
                         @Override
@@ -63,12 +67,16 @@ public class ChooseActivity extends AppCompatActivity {
 
                     LinearLayout ll = (LinearLayout)findViewById(R.id.view);
                     LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+                    lp.setMargins(margin, margin, margin, margin);
                     ll.addView(myButton, lp);
                 }
             }else{
                 //get the first value's of config.json
                 for(int i = 0; i<config.length(); i++){
                     Button myButton = new Button(this);
+                    myButton.setTextColor(getResources().getColor(R.color.normalButtonTextColor));
+                    myButton.setBackgroundColor(getResources().getColor(R.color.normalButtonBackgroundColor));
+
                     myButton.setText(config.names().getString(i));
                     myButton.setOnClickListener(new View.OnClickListener() {
                         @Override
@@ -79,6 +87,7 @@ public class ChooseActivity extends AppCompatActivity {
 
                     LinearLayout ll = (LinearLayout)findViewById(R.id.view);
                     LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+                    lp.setMargins(margin, margin, margin, margin);
                     ll.addView(myButton, lp);
                 }
             }

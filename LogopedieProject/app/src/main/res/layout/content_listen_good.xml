@@ -20,8 +20,8 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="428dp"
-            app:srcCompat="@drawable/ear" />
+            android:layout_height="420dp"
+            app:srcCompat="@drawable/ear2" />
 
         <LinearLayout
             android:layout_width="match_parent"

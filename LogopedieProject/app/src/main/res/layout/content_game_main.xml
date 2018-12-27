@@ -19,18 +19,27 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Terug"
-            android:onClick="back"/>
+            android:onClick="back"
+            android:textColor="@color/backButtonTextColor"
+            android:layout_margin="2dp"
+            android:background="@color/BackbuttonBackgroundColor"/>
         <Button
             android:id="@+id/goToListenGood"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Luister goed"
-            android:onClick="goToListenGood"/>
+            android:onClick="goToListenGood"
+            android:textColor="@color/normalButtonTextColor"
+            android:layout_margin="2dp"
+            android:background="@color/normalButtonBackgroundColor"/>
         <Button
             android:id="@+id/goToSayItYourself"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Zeg het zelf eens"
-            android:onClick="goToSayItYourself"/>
+            android:onClick="goToSayItYourself"
+            android:textColor="@color/normalButtonTextColor"
+            android:layout_margin="2dp"
+            android:background="@color/normalButtonBackgroundColor"/>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
