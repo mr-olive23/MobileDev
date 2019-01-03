@@ -29,7 +29,8 @@
             android:scaleType="centerInside"
             android:src="@drawable/vraagteken"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:onClick="onClickDraaiPrent"/>
 
         <ImageView
             android:id="@+id/iv_2"
@@ -37,7 +38,8 @@
             android:scaleType="centerInside"
             android:src="@drawable/vraagteken"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:onClick="onClickDraaiPrent"/>
 
         <ImageView
             android:id="@+id/iv_3"
@@ -45,7 +47,8 @@
             android:scaleType="centerInside"
             android:src="@drawable/vraagteken"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:onClick="onClickDraaiPrent"/>
         </LinearLayout>
 
         <LinearLayout
@@ -62,7 +65,8 @@
                 android:scaleType="centerInside"
                 android:src="@drawable/vraagteken"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:onClick="onClickDraaiPrent"/>
 
             <ImageView
                 android:id="@+id/iv_5"
@@ -70,7 +74,8 @@
                 android:scaleType="centerInside"
                 android:src="@drawable/vraagteken"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:onClick="onClickDraaiPrent"/>
 
             <ImageView
                 android:id="@+id/iv_6"
@@ -78,7 +83,8 @@
                 android:scaleType="centerInside"
                 android:src="@drawable/vraagteken"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:onClick="onClickDraaiPrent"/>
         </LinearLayout>
 
         <LinearLayout
@@ -94,7 +100,8 @@
                 android:scaleType="centerInside"
                 android:src="@drawable/vraagteken"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:onClick="onClickDraaiPrent"/>
 
             <ImageView
                 android:id="@+id/iv_8"
@@ -102,7 +109,8 @@
                 android:scaleType="centerInside"
                 android:src="@drawable/vraagteken"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:onClick="onClickDraaiPrent"/>
 
             <ImageView
                 android:id="@+id/iv_9"
@@ -110,7 +118,8 @@
                 android:scaleType="centerInside"
                 android:src="@drawable/vraagteken"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:onClick="onClickDraaiPrent"/>
         </LinearLayout>
 
         <LinearLayout

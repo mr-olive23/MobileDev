@@ -1,10 +1,13 @@
 package be.thomasmore.logopedieproject;
 
+import android.animation.Animator;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -19,14 +22,15 @@ import org.json.JSONObject;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Random;
 
 public class SayItYourselfActivity extends AppCompatActivity {
-    ArrayList<String> pictures = new ArrayList<String>();
-    String pictureName;
+    ArrayList<String> location = new ArrayList<String>();
+    JSONObject word1, word2;
+    String picture1, picture2;
 
     private int juistAntwoord;
 
-    ImageView iv_1, iv_2, iv_3, iv_4, iv_5, iv_6, iv_7, iv_8, iv_9;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,43 +40,75 @@ public class SayItYourselfActivity extends AppCompatActivity {
 
         //get picture
         Intent intent = getIntent();
-        pictures = intent.getStringArrayListExtra("navPosition");
+        location = intent.getStringArrayListExtra("navPosition");
 
         //get auditing bombardment file
         String jsonText = loadJSONFromAsset(getApplicationContext());
         try {
             JSONObject config = new JSONObject(jsonText);
             JSONObject temp = config;
-            for (int i = 0; i < pictures.size(); i++){
-                temp = temp.getJSONObject(pictures.get(i));
+            for (int i = 0; i < (location.size()); i++) {
+                temp = temp.getJSONObject(location.get(i));
             }
-            pictureName = temp.getString("picture");
-            Log.e("gogo", pictureName);
+            picture1 = temp.getJSONObject("word1").getString("picture");
+            picture2 = temp.getJSONObject("word2").getString("picture");
         } catch (JSONException e) {
             e.printStackTrace();
         }
-
-        maakPrentjes();
-    }
-    public void maakPrentjes(){
-        //Prentjes shufflen
-        Intent intent = getIntent();
-        pictures = intent.getStringArrayListExtra("navPosition");
-        //Prentjes tonen
     }
 
-    public void onClickAnswer(View v){
-    Button answer = (Button) v;
-    int buttonTag = Integer.parseInt(v.getTag().toString());
-    if (buttonTag == juistAntwoord){
-        // prent blijft dan omgedraaid + pling geluid
-    }else{
-        // prent word terug omgedraaid
-    }
+    private Drawable randomDrawable() {
+        Random r = new Random();
+        boolean number = r.nextBoolean();
+        if(number) {
+            int id = getResources().getIdentifier(picture1, "drawable",getPackageName());
+            return ContextCompat.getDrawable(getApplicationContext(), id);
+        }else{
+            int id = getResources().getIdentifier(picture2, "drawable",getPackageName());
+            return ContextCompat.getDrawable(getApplicationContext(), id);
+        }
     }
 
-    public void onClickDraaiPrent(){
+    public void onClickAnswer(View v) {
+        Button answer = (Button) v;
+        int buttonTag = Integer.parseInt(v.getTag().toString());
+        if (buttonTag == juistAntwoord) {
+            // prent blijft dan omgedraaid + pling geluid
+        } else {
+            // prent word terug omgedraaid
+        }
+    }
 
+    public void onClickDraaiPrent(View v) {
+        final Drawable drawable=randomDrawable();
+        final ImageView iv = (ImageView) findViewById(v.getId());
+        iv.setRotationY(0f);
+        iv.animate().rotationY(90f).setListener(new Animator.AnimatorListener()
+        {
+
+            @Override
+            public void onAnimationStart(Animator animation)
+            {
+            }
+
+            @Override
+            public void onAnimationRepeat(Animator animation)
+            {
+            }
+
+            @Override
+            public void onAnimationEnd(Animator animation)
+            {
+                iv.setImageDrawable(drawable);
+                iv.setRotationY(270f);
+                iv.animate().rotationY(360f).setListener(null);
+            }
+
+            @Override
+            public void onAnimationCancel(Animator animation)
+            {
+            }
+        });
     }
 
     private String loadJSONFromAsset(Context context) {

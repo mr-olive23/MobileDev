@@ -5,25 +5,29 @@
         "Bek - Bed": {
           "game": true,
           "sound": "reeks1",
-          "Bek": {
+          "word1": {
+            "word": "bek",
             "sound": "bek",
-            "picture": "tekeningnijlpaard.png"
+            "picture": "tekeningnijlpaard"
           },
-          "Bed": {
+          "word2": {
+            "word": "bed",
             "sound": "bed",
-            "picture": "tekeningbed.png"
+            "picture": "tekeningbed"
           }
         },
         "Nek - Net": {
           "game": true,
           "sound": "reeks1",
-          "Nek": {
+          "word1": {
+            "word": "nek",
             "sound": "nek",
-            "picture": "tekeningnek.png"
+            "picture": "tekeningnek"
           },
-          "Net": {
+          "word2": {
+            "word": "net",
             "sound": "net",
-            "picture": "tekeningnet.png"
+            "picture": "tekeningnet2"
           }
         },
         "Bak - Bad": {
@@ -31,11 +35,11 @@
           "sound": "reeks1",
           "Bak": {
             "sound": "bak",
-            "picture": "tekeningbak.png"
+            "picture": "tekeningbak"
           },
           "Bad": {
             "sound": "bad",
-            "picture": "tekeningnbad.png"
+            "picture": "tekeningnbad"
           }
         }
       },
