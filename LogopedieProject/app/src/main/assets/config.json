@@ -27,44 +27,96 @@
           "word2": {
             "word": "net",
             "sound": "net",
-            "picture": "tekeningnet2"
+            "picture": "tekeningnet"
           }
         },
         "Bak - Bad": {
           "game": true,
           "sound": "reeks1",
-          "Bak": {
+          "word1": {
+            "word": "bak",
             "sound": "bak",
             "picture": "tekeningbak"
           },
-          "Bad": {
+          "word2": {
+            "word": "bad",
             "sound": "bad",
-            "picture": "tekeningnbad"
+            "picture": "tekeningbad"
           }
         }
       },
       "G-S": {
         "Buig - Buis": {
           "game": true,
-          "sound": "reeks3"
+          "sound": "reeks3",
+          "word1": {
+            "word": "buig",
+            "sound": "buig",
+            "picture": "tekeningbuig"
+          },
+          "word2": {
+            "word": "buis",
+            "sound": "buis",
+            "picture": "tekeningbuis"
+          }
         },
         "Leeg - Lees": {
           "game": true,
-          "sound": "reeks3"
+          "sound": "reeks3",
+          "word1": {
+            "word": "leeg",
+            "sound": "leeg",
+            "picture": "tekeningleeg"
+          },
+          "word2": {
+            "word": "lees",
+            "sound": "lees",
+            "picture": "tekeninglees"
+          }
         },
         "Dag - Das": {
           "game": true,
-          "sound": "reeks3"
+          "sound": "reeks3",
+          "word1": {
+            "word": "dag",
+            "sound": "dag",
+            "picture": "tekeningdag"
+          },
+          "word2": {
+            "word": "das",
+            "sound": "das",
+            "picture": "tekeningdas"
+          }
         }
       },
       "NG-N": {
         "Pang - Pan": {
           "game": true,
-          "sound": "reeks5"
+          "sound": "reeks5",
+          "word1": {
+            "word": "pang",
+            "sound": "pang",
+            "picture": "tekeningpang"
+          },
+          "word2": {
+            "word": "pan",
+            "sound": "pan",
+            "picture": "tekeningpan"
+          }
         },
         "Tong - Ton": {
           "game": true,
-          "sound": "reeks5"
+          "sound": "reeks5",
+          "word1": {
+            "word": "tong",
+            "sound": "tong",
+            "picture": "tekeningtong"
+          },
+          "word2": {
+            "word": "ton",
+            "sound": "ton",
+            "picture": "tekenington"
+          }
         }
       }
     },
@@ -72,29 +124,89 @@
       "K-T": {
         "Koe - Toe": {
           "game": true,
-          "sound": "reeks2"
+          "sound": "reeks2",
+          "word1": {
+            "word": "koe",
+            "sound": "koe",
+            "picture": "tekeningkoe"
+          },
+          "word2": {
+            "word": "toe",
+            "sound": "toe",
+            "picture": "tekeningtoe"
+          }
         },
         "Kou - Touw": {
           "game": true,
-          "sound": "reeks2"
+          "sound": "reeks2",
+          "word1": {
+            "word": "kou",
+            "sound": "kou",
+            "picture": "tekeningkou"
+          },
+          "word2": {
+            "word": "touw",
+            "sound": "touw",
+            "picture": "tekeningtouw"
+          }
         },
         "Kam - Tam": {
           "game": true,
-          "sound": "reeks2"
+          "sound": "reeks2",
+          "word1": {
+            "word": "kam",
+            "sound": "kam",
+            "picture": "tekeningkam"
+          },
+          "word2": {
+            "word": "tam",
+            "sound": "tam",
+            "picture": "tam"
+          }
         }
       },
       "G-S/V": {
         "Guus - Suus": {
           "game": true,
-          "sound": "reeks4"
+          "sound": "reeks4",
+          "word1": {
+            "word": "guus",
+            "sound": "guus",
+            "picture": "tekeningGuus"
+          },
+          "word2": {
+            "word": "suus",
+            "sound": "suus",
+            "picture": "tekeningSuus"
+          }
         },
         "Goed - Voet": {
           "game": true,
-          "sound": "reeks4"
+          "sound": "reeks4",
+          "word1": {
+            "word": "goed",
+            "sound": "goed",
+            "picture": "tekeninggoed"
+          },
+          "word2": {
+            "word": "voet",
+            "sound": "voet",
+            "picture": "tekeningvoet"
+          }
         },
         "Goud - Fout": {
           "game": true,
-          "sound": "reeks4"
+          "sound": "reeks4",
+          "word1": {
+            "word": "goud",
+            "sound": "goud",
+            "picture": "goud"
+          },
+          "word2": {
+            "word": "fout",
+            "sound": "fout",
+            "picture": "tekeningfout"
+          }
         }
       }
     }
@@ -104,17 +216,47 @@
       "S-T": {
         "Boos - Boot": {
           "game": true,
-          "sound": "reeks6"
+          "sound": "reeks6",
+          "word1": {
+            "word": "boos",
+            "sound": "boos",
+            "picture": "tekeningboos"
+          },
+          "word2": {
+            "word": "boot",
+            "sound": "boot",
+            "picture": "tekeningboot"
+          }
         },
         "Bos - Bot": {
           "game": true,
-          "sound": "reeks6"
+          "sound": "reeks6",
+          "word1": {
+            "word": "bos",
+            "sound": "bos",
+            "picture": "tekeningbos"
+          },
+          "word2": {
+            "word": "bot",
+            "sound": "bot",
+            "picture": "tekeningnbot"
+          }
         }
       },
       "CH-T": {
         "Pech - Pet": {
           "game": true,
-          "sound": "reeks3"
+          "sound": "reeks3",
+          "word1": {
+            "word": "pech",
+            "sound": "pech",
+            "picture": "pech"
+          },
+          "word2": {
+            "word": "pet",
+            "sound": "pet",
+            "picture": "pet"
+          }
         }
       }
     },
@@ -122,27 +264,77 @@
       "G-K": {
         "Gat - Kat": {
           "game": true,
-          "sound": "reeks4"
+          "sound": "reeks4",
+          "word1": {
+            "word": "gat",
+            "sound": "gat",
+            "picture": "gat"
+          },
+          "word2": {
+            "word": "kat",
+            "sound": "kat",
+            "picture": "kat"
+          }
         }
       },
       "S/Z-T": {
         "Sok - Tok": {
           "game": true,
-          "sound": "reeks7"
+          "sound": "reeks7",
+          "word1": {
+            "word": "sok",
+            "sound": "sok",
+            "picture": "tekeningsok"
+          },
+          "word2": {
+            "word": "tok",
+            "sound": "tok",
+            "picture": "tekeningtok"
+          }
         },
         "Zak - Tak": {
           "game": true,
-          "sound": "reeks8"
+          "sound": "reeks8",
+          "word1": {
+            "word": "zak",
+            "sound": "zak",
+            "picture": "tekeningzak"
+          },
+          "word2": {
+            "word": "tak",
+            "sound": "tak",
+            "picture": "tekeningtak"
+          }
         }
       },
       "F-T": {
         "Fee - Thee": {
           "game": true,
-          "sound": "reeks9"
+          "sound": "reeks9",
+          "word1": {
+            "word": "fee",
+            "sound": "fee",
+            "picture": "fee"
+          },
+          "word2": {
+            "word": "thee",
+            "sound": "thee",
+            "picture": "tekeningthee"
+          }
         },
         "Fien - Tien": {
           "game": true,
-          "sound": "reeks9"
+          "sound": "reeks9",
+          "word1": {
+            "word": "fien",
+            "sound": "fien",
+            "picture": "tekeningfien"
+          },
+          "word2": {
+            "word": "tien",
+            "sound": "tien",
+            "picture": "tien"
+          }
         }
       }
     }
