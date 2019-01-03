@@ -34,7 +34,7 @@ public class SayItYourselfActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        //get location
+        //get picture
         Intent intent = getIntent();
         pictures = intent.getStringArrayListExtra("navPosition");
 
@@ -57,7 +57,7 @@ public class SayItYourselfActivity extends AppCompatActivity {
     public void maakPrentjes(){
         //Prentjes shufflen
         Intent intent = getIntent();
-
+        pictures = intent.getStringArrayListExtra("navPosition");
         //Prentjes tonen
     }
 
